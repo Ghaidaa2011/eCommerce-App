@@ -110,11 +110,6 @@
     },
     {
       "userId": 1,
-      "productId": 1,
-      "id": 28
-    },
-    {
-      "userId": 1,
       "productId": 5,
       "id": 29
     },
@@ -122,6 +117,16 @@
       "userId": 1,
       "productId": 2,
       "id": 30
+    },
+    {
+      "userId": 1,
+      "productId": 1,
+      "id": 31
+    },
+    {
+      "userId": 1,
+      "productId": 3,
+      "id": 32
     }
   ]
 }
