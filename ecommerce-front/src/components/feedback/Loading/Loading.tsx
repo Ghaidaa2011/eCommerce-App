@@ -2,6 +2,7 @@ import { TLoading } from "@types";
 import CategorySkeleton from "../skeletons/CategorySkeleton/CategorySkeleton";
 import CartSkeleton from "../skeletons/CartSkeleton/CartSkeleton";
 import ProductSkeleton from "../skeletons/ProductSkeleton/ProductSkeleton";
+import LottieHandler from "../LottieHandler/LottieHandler";
 //dynamic component
 const skeletonsTypes = {
   category: CategorySkeleton,
@@ -21,7 +22,11 @@ const Loading = ({ status, error, children, type }: LoadingProps) => {
     return <Component />;
   }
   if (status === "failed") {
-    return <div>{error}</div>;
+    return (
+      <div>
+        <LottieHandler type="error" message={error as string} />
+      </div>
+    );
   }
   return <div>{children}</div>;
 };
