@@ -1,4 +1,41 @@
 {
+  "users": [
+    {
+      "email": "ghaidaahaled@gmail.com",
+      "password": "$2a$10$/Jg5XRZWYG/M.e2V89bL3uZGW7RbfLs1d3.0hFE.bMHdSPXGi254G",
+      "firstName": "ghaidaa",
+      "lastName": "khaled",
+      "id": 1
+    },
+    {
+      "email": "ghaidaakhaled@gmail.com",
+      "password": "$2a$10$PvaQPfr3/Vh/DPyjmKwANOM.xItTTspUTP7tJCbiArRWn6VKlrOWS",
+      "firstName": "ghaidaa",
+      "lastName": "khaled",
+      "id": 2
+    },
+    {
+      "email": "nooryyyy@gamil.com",
+      "password": "$2a$10$T/USa4MjsZXmdA/KPEq60uNc1R7Gv9zy/22rAp1Hvbg6cdNl0T04.",
+      "firstName": "ghaidaa",
+      "lastName": "khaled",
+      "id": 3
+    },
+    {
+      "email": "eve.holt@eve.in",
+      "password": "$2a$10$OIMA4EysgWwOJ2m3Urq1hOiAHUonSmb2TqVNbqSXBGBJ.BoohUQpW",
+      "firstName": "ghaidaa",
+      "lastName": "khaled",
+      "id": 4
+    },
+    {
+      "email": "eveeeekkkkk.holt@reqres.inn",
+      "password": "$2a$10$5xouPsjQbcqAv4fQivuZ9ey3SLg2xsu9Ex/MrjRTagYoATAnYWRM2",
+      "firstName": "ghaidaa",
+      "lastName": "khaled",
+      "id": 5
+    }
+  ],
   "category": [
     {
       "id": 1,
@@ -100,7 +137,7 @@
   "wishlist": [
     {
       "userId": 1,
-      "productId": 6,
+      "productId": 1,
       "id": 1
     }
   ]
