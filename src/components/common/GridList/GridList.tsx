@@ -16,7 +16,8 @@ const GridList = <T extends { id?: number }>({
     records.length > 0 ? (
       records.map((record) => (
         <Col
-          xs={3}
+          xs={6}
+          md={3}
           key={record.id}
           className="d-flex justify-content-center mb-5 mt-2"
         >

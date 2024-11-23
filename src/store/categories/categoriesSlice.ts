@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import actGetCategories from "./act/actGetCategories";
-import { TLoading,TCategory,isString  } from "@types";
+import { TLoading, TCategory, isString } from "@types";
 
 interface ICategoriesState {
   records: TCategory[];
@@ -41,5 +41,5 @@ const categoriesSlice = createSlice({
 });
 
 export { actGetCategories };
-export const {categoriesRecordsCleanUp} = categoriesSlice.actions;
+export const { categoriesRecordsCleanUp } = categoriesSlice.actions;
 export default categoriesSlice.reducer;

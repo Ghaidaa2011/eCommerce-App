@@ -2,31 +2,40 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import {AxiosErrorHandler} from "@utils";
 import { TProduct } from "@types";
+import { RootState } from "@store/index";
 
+type TDataType = "productsFullInfo" | "ProductIds";
 type TResponse = TProduct[];
 
 const actGetWishlist = createAsyncThunk(
   "wishlist/actGetWishlist",
-  async (_, thunkAPI) => {
-    const { rejectWithValue, fulfillWithValue, signal } = thunkAPI;
+  async (DataType: TDataType, thunkAPI) => {
+    const { rejectWithValue, signal, getState} = thunkAPI;
+    const {auth} = getState() as RootState;
 
     try {
       const userWishlist = await axios.get<{ productId: number }[]>(
-        "/wishlist?userId=1", {signal}
+        `/wishlist?userId=${auth.user?.id}`, {signal}
       );
 
       if (!userWishlist.data.length) {
-        return fulfillWithValue([]);
+        return {data: [], dataType: "empty"};
       }
 
-      const concatenatedItemsId = userWishlist.data
+      if(DataType==="ProductIds"){
+        const concatenatedItemsId = userWishlist.data.map((el) => el.productId);
+        return {data: concatenatedItemsId, dataType: "ProductIds"};
+      }else{
+        const concatenatedItemsId = userWishlist.data
         .map((el) => `id=${el.productId}`)
         .join("&");
 
       const response = await axios.get<TResponse>(
         `/products?${concatenatedItemsId}`
       );
-      return response.data;
+      return {data: response.data, dataType: "productsFullInfo"};
+      }
+      
     } catch (error) {
       return rejectWithValue(AxiosErrorHandler(error));
     }

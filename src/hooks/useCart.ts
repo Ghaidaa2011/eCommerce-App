@@ -2,28 +2,22 @@ import { useCallback, useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "@store/hooks";
 import {
   actGetProductsByItems,
-  cleanCartProductsFullInfo,
   cartItemChangeQuantity,
   cartItemRemove,
+  cleanCartProductsFullInfo,
 } from "@store/cart/cartSlice";
+import { resetOrderStatus } from "@store/orders/ordersSlice";
+
 const useCart = () => {
   const dispatch = useAppDispatch();
+
   const { items, productsFullInfo, loading, error } = useAppSelector(
     (state) => state.cart
   );
 
-  useEffect(() => {
-    const promise = dispatch(actGetProductsByItems());
-    return () => {
-      dispatch(cleanCartProductsFullInfo());
-      promise.abort();
-    };
-  }, [dispatch]);
+  const userAccessToken = useAppSelector((state) => state.auth.accessToken);
 
-  const products = productsFullInfo.map((el) => ({
-    ...el,
-    quantity: items[el.id],
-  }));
+  const placeOrderStatus = useAppSelector((state) => state.orders.loading);
 
   const changeQuantityHandler = useCallback(
     (id: number, quantity: number) => {
@@ -38,6 +32,31 @@ const useCart = () => {
     },
     [dispatch]
   );
-  return {loading, error, products, changeQuantityHandler, removeItemHandler}
-}
-export default useCart
+
+  const products = productsFullInfo.map((el) => ({
+    ...el,
+    quantity: items[el.id],
+  }));
+
+  useEffect(() => {
+    const promise = dispatch(actGetProductsByItems());
+
+    return () => {
+      promise.abort();
+      dispatch(cleanCartProductsFullInfo());
+      dispatch(resetOrderStatus());
+    };
+  }, [dispatch]);
+
+  return {
+    loading,
+    error,
+    products,
+    userAccessToken,
+    placeOrderStatus,
+    changeQuantityHandler,
+    removeItemHandler,
+  };
+};
+
+export default useCart;

@@ -1,5 +1,7 @@
+import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "@store/hooks";
 import { authLogout } from "@store/auth/authSlice";
+import { actGetWishlist } from "@store/wishlist/wishlistSlice";
 import { NavLink } from "react-router-dom";
 import { Badge, Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import styles from "./styles.module.css";
@@ -9,6 +11,11 @@ const { headerContainer, headerLogo } = styles;
 const Header = () => {
   const dispatch = useAppDispatch();
   const { user, accessToken } = useAppSelector((state) => state.auth);
+  useEffect(() => {
+    if (accessToken) {
+      dispatch(actGetWishlist("ProductIds"));
+    }
+  }, [dispatch, accessToken]);
   return (
     <header>
       <div className={headerContainer}>
@@ -34,6 +41,9 @@ const Header = () => {
               <Nav.Link as={NavLink} to="categories">
                 Categories
               </Nav.Link>
+              <Nav.Link as={NavLink} to="allProducts">
+                All Products
+              </Nav.Link>
               <Nav.Link as={NavLink} to="about-us">
                 About
               </Nav.Link>
@@ -53,10 +63,12 @@ const Header = () => {
                   title={`Welcome ${user?.firstName} ${user?.lastName}`!}
                   id="basic-nav-dropdown"
                 >
-                  <NavDropdown.Item as={NavLink} to="profile">
+                  <NavDropdown.Item as={NavLink} to="profile" end>
                     Profile
                   </NavDropdown.Item>
-                  <NavDropdown.Item>Orders</NavDropdown.Item>
+                  <NavDropdown.Item as={NavLink} to="profile/orders">
+                    Orders
+                  </NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item
                     as={NavLink}

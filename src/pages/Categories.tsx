@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import { Category } from "@components/eCommerce";
 import { Loading } from "@components/feedback";
 import { GridList, Heading } from "@components/common";
+import { TCategory } from "@types";
 
 const Categories = () => {
   const { loading, error, records } = useCategories();
@@ -10,7 +11,7 @@ const Categories = () => {
     <Container>
       <Heading title="Categories" />
       <Loading status={loading} error={error} type="category">
-        <GridList
+        <GridList<TCategory>
           emptyMessage="There are no categories"
           records={records}
           renderItem={(record) => <Category {...record} />}

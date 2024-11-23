@@ -2,12 +2,15 @@ import { TLoading } from "@types";
 import CategorySkeleton from "../skeletons/CategorySkeleton/CategorySkeleton";
 import CartSkeleton from "../skeletons/CartSkeleton/CartSkeleton";
 import ProductSkeleton from "../skeletons/ProductSkeleton/ProductSkeleton";
+import TableSkeleton from "../TableSkeleton/TableSkeleton";
 import LottieHandler from "../LottieHandler/LottieHandler";
+
 //dynamic component
 const skeletonsTypes = {
   category: CategorySkeleton,
   cart: CartSkeleton,
   product: ProductSkeleton,
+  table: TableSkeleton,
 };
 type LoadingProps = {
   status: TLoading;
