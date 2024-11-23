@@ -4,7 +4,8 @@ import {
   getCartTotalQuantitySelector,
   itemQuantityAvailabilityCheckingSelector,
 } from "./selectors";
-import { TProduct,TLoading,  isString } from "@types";
+import { TProduct, TLoading, isString } from "@types";
+import { toast } from "sonner";
 
 interface ICartState {
   items: { [key: string]: number };
@@ -25,6 +26,7 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     addToCart: (state, action) => {
+      toast.success("One Item Added");
       const id = action.payload;
       if (state.items[id]) {
         state.items[id]++;
@@ -36,6 +38,7 @@ const cartSlice = createSlice({
       state.items[action.payload.id] = action.payload.quantity;
     },
     cartItemRemove: (state, action) => {
+      toast("You removed an item");
       delete state.items[action.payload];
       state.productsFullInfo = state.productsFullInfo.filter(
         (el) => el.id !== action.payload

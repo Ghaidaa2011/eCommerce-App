@@ -9,11 +9,14 @@ import "./services/axios-global.js";
 // styles
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@styles/global.css";
+//Sooner Toaster
+import { Toaster } from "sonner";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
       <AppRouter />
+      <Toaster richColors duration={1500} />
     </PersistGate>
   </Provider>
 );

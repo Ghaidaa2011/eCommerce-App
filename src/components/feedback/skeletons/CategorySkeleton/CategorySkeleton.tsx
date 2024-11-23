@@ -2,7 +2,7 @@ import ContentLoader from "react-content-loader";
 import { Row, Col } from "react-bootstrap";
 
 const CategorySkeleton = () => {
-  const renderSkeletons = Array(4)
+  const renderSkeletons = Array(8)
     .fill(0)
     .map((_, idx) => (
       <Col key={idx} sx={3} className="d-flex justify-content-center mb-5 mt-2">

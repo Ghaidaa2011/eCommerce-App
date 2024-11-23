@@ -3,7 +3,7 @@ import ContentLoader from "react-content-loader";
 import { Row, Col } from "react-bootstrap";
 
 const ProductSkeleton = () => {
-  const renderList = Array(4)
+  const renderList = Array(8)
     .fill(0)
     .map((_, idx) => (
       <Col xs={3} key={idx} className="d-flex justify-content-center mb-5 mt-2">
