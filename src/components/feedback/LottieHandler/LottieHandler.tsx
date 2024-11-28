@@ -4,6 +4,7 @@ import empty from "@assets/lottieFiles/empty.json";
 import loading from "@assets/lottieFiles/loading.json";
 import error from "@assets/lottieFiles/error.json";
 import success from "@assets/lottieFiles/success.json";
+import search from "@assets/lottieFiles/search.json";
 
 const lottieFilesMap = {
   notFound,
@@ -11,6 +12,7 @@ const lottieFilesMap = {
   loading,
   error,
   success,
+  search,
 };
 type LottieHandlerProps = {
   type: keyof typeof lottieFilesMap;

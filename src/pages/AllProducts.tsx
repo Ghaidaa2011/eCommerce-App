@@ -35,6 +35,7 @@ const AllProducts = () => {
       </div>
       <Loading status={loading} error={error} type="product">
         <GridList<TProduct>
+          type="empty"
           emptyMessage="There are no products"
           records={productsFullInfo}
           renderItem={(record) => <Product {...record} />}

@@ -11,12 +11,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "@styles/global.css";
 //Sooner Toaster
 import { Toaster } from "sonner";
+// import AxiosInterceptors from "@services/AxiosInterceptors.js";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <Provider store={store}>
+    {/* <AxiosInterceptors> */}
     <PersistGate loading={null} persistor={persistor}>
       <AppRouter />
       <Toaster richColors duration={1500} />
     </PersistGate>
+    {/* </AxiosInterceptors> */}
   </Provider>
 );

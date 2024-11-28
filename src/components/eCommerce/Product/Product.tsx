@@ -9,6 +9,7 @@ import { TProduct } from "@types";
 
 import styles from "./styles.module.css";
 import ProductInfo from "../ProductInfo/ProductInfo";
+import { toast } from "sonner";
 const { maximumNotice, wishlistBtn } = styles;
 
 const Product = memo(
@@ -54,9 +55,13 @@ const Product = memo(
       if (isAuthenticated) {
         if (!isLoading) {
           setIsLoading(true);
+          const action = isLiked ? "unliked" : "liked";
           dispatch(actLikeToggle(id))
             .unwrap()
-            .then(() => setIsLoading(false))
+            .then(() => {
+              setIsLoading(false);
+              toast(`You ${action} an item`);
+            })
             .catch(() => setIsLoading(false));
         }
       } else {

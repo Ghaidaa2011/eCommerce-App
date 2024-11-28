@@ -1,16 +1,19 @@
 import { LottieHandler } from "@components/feedback";
+import { TLottie } from "@types";
 import { Row, Col } from "react-bootstrap";
 
 type GridListProps<T> = {
   records: T[];
   renderItem: (record: T) => React.ReactNode;
   emptyMessage: string;
+  type: TLottie;
 };
 
 const GridList = <T extends { id?: number }>({
   records,
   renderItem,
   emptyMessage,
+  type,
 }: GridListProps<T>) => {
   const renderList =
     records.length > 0 ? (
@@ -25,7 +28,7 @@ const GridList = <T extends { id?: number }>({
         </Col>
       ))
     ) : (
-      <LottieHandler type="empty" message={emptyMessage} />
+      <LottieHandler type={type} message={emptyMessage} />
     );
   return <Row>{renderList}</Row>;
 };

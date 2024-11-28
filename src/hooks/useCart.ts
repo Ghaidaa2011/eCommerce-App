@@ -32,7 +32,7 @@ const useCart = () => {
     },
     [dispatch]
   );
-
+  //Merging the productsFullInfo with the quantityyyyy
   const products = productsFullInfo.map((el) => ({
     ...el,
     quantity: items[el.id],

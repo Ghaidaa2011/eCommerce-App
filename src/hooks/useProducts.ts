@@ -20,7 +20,6 @@ const useProducts = () => {
     isLiked: wishListItemsId.includes(el.id),
     isAuthenticated: userAccessToken ? true : false
   }));
-  console.log(params.prefix)
   useEffect(() => {
     //Instead of using Type Guarding(by if ()) use Type Custing
     const promise = dispatch(actGetProductsByCatPrefix(params.prefix as string));
