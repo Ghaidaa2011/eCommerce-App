@@ -11,10 +11,14 @@ const actGetAllProducts = createAsyncThunk(
   async (_, thunkAPI) => {
     const { getState, rejectWithValue, signal } = thunkAPI;
     const { products } = getState() as RootState;
+
+    // Conditionally build the URL based on prefix
+    const url = products.prefix && products.prefix !== "All"
+      ? `/products?_page=${products.page}&_sort=${products.sortBy}&_order=${products.order}&cat_prefix=${products.prefix}`
+      : `/products?_page=${products.page}&_sort=${products.sortBy}&_order=${products.order}`;
+
     try {
-      const { data } = await axios.get<TResponse>(
-        `/products?_page=${products.page}&_sort=${products.sortBy}&_order=${products.order}&cat_prefix_like=${products.prefix}`, { signal }
-      );
+      const { data } = await axios.get<TResponse>(url, { signal });
       console.log(data);
       return data;
     } catch (error) {
