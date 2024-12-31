@@ -1,0 +1,11 @@
+type for literal types or functions
+interface for object
+
+children: React.reactNode;
+children: React.JSX.Element;
+React typescript sheet -> website
+
+type TList<T> = T[];
+type TObj<T> = {record: T[]};
+
+when I use it as a type -> TList<T> or TObj<T>

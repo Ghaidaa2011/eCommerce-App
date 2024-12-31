@@ -2,38 +2,17 @@
   "users": [
     {
       "email": "ghaidaahaled@gmail.com",
-      "password": "$2a$10$/Jg5XRZWYG/M.e2V89bL3uZGW7RbfLs1d3.0hFE.bMHdSPXGi254G",
-      "firstName": "ghaidaa",
-      "lastName": "khaled",
+      "password": "$2a$10$BVXR9miJVDB9RKBDkvH7u.EgQqgv1avx.Lpf2t8WrCCeShaqVZ4o.",
+      "firstName": "Ghaidaa",
+      "lastName": "Ibrahim",
       "id": 1
     },
     {
       "email": "ghaidaakhaled@gmail.com",
-      "password": "$2a$10$PvaQPfr3/Vh/DPyjmKwANOM.xItTTspUTP7tJCbiArRWn6VKlrOWS",
-      "firstName": "ghaidaa",
-      "lastName": "khaled",
+      "password": "$2a$10$vV7K1UeTHQmiugIgsJ3XheVlhWcfYEYsdVYvwN9CuReIa.cz2NswO",
+      "firstName": "Ibrahim",
+      "lastName": "Ibrahim",
       "id": 2
-    },
-    {
-      "email": "nooryyyy@gamil.com",
-      "password": "$2a$10$T/USa4MjsZXmdA/KPEq60uNc1R7Gv9zy/22rAp1Hvbg6cdNl0T04.",
-      "firstName": "ghaidaa",
-      "lastName": "khaled",
-      "id": 3
-    },
-    {
-      "email": "eve.holt@eve.in",
-      "password": "$2a$10$OIMA4EysgWwOJ2m3Urq1hOiAHUonSmb2TqVNbqSXBGBJ.BoohUQpW",
-      "firstName": "ghaidaa",
-      "lastName": "khaled",
-      "id": 4
-    },
-    {
-      "email": "eveeeekkkkk.holt@reqres.inn",
-      "password": "$2a$10$5xouPsjQbcqAv4fQivuZ9ey3SLg2xsu9Ex/MrjRTagYoATAnYWRM2",
-      "firstName": "ghaidaa",
-      "lastName": "khaled",
-      "id": 5
     }
   ],
   "category": [
@@ -74,7 +53,7 @@
       "title": "Jersey top",
       "price": 249,
       "cat_prefix": "men",
-      "img": "https://eg.hm.com/assets/styles/HNM/14482498/6103a8463876770c30cdba3535b7be1f333315fe/2/image-thumb__3464789__product_listing/cb91f8f128ac2125e0ec3a008a2e8d2497d15434.jpg",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:0c41e24e-3c8c-41b9-858a-e69428fcbf1b/as/EID-49aa0cb31e13cc5989d9f8cebf5a620bcc43738c.jpg?width=450&height=675&preferwebp=true",
       "max": 4
     },
     {
@@ -82,7 +61,7 @@
       "title": "Regular Fit Jersey top",
       "price": 229,
       "cat_prefix": "men",
-      "img": "https://eg.hm.com/assets/styles/HNM/14482498/6103a8463876770c30cdba3535b7be1f333315fe/2/image-thumb__3464789__product_listing/cb91f8f128ac2125e0ec3a008a2e8d2497d15434.jpg",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:1256399d-f338-4e41-baeb-4ec73ec2191c/as/EID-337f976ac6f6426c0b5ba1bffcdedc1ebbd6411b.jpg?preferwebp=true&height=630",
       "max": 4
     },
     {
@@ -90,7 +69,7 @@
       "title": "Cotton polo shirt",
       "price": 200,
       "cat_prefix": "men",
-      "img": "https://eg.hm.com/assets/styles/HNM/13994073/eeb1d90c4764366000eb8b8571396e81f0de5c44/2/image-thumb__3142108__product_listing/4d6db9e8f936d3d82b13bc5861b0310fa214c74d.jpg",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:e3de1c42-daeb-45fb-9970-7d2d2447c4af/as/EID-29aa100fe02e1a64ca80c25e51bbad8d0929cab7.jpg?preferwebp=true&height=630",
       "max": 3
     },
     {
@@ -98,7 +77,7 @@
       "title": "Cotton t-shirt",
       "price": 100,
       "cat_prefix": "women",
-      "img": "https://eg.hm.com/assets/styles/HNM/13650519/6cc34f51caee1d6cfe776b933d667075fa30d90d/2/image-thumb__2888777__product_listing/16c27492b022ac2eef03853f85d5b279a29ebeed.jpg",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:c486ae20-0a43-4191-9ec6-8fbf58e0a1b9/as/EID-e15ebf3edc32b9f3442b57bff861293459480153.jpg?preferwebp=true&height=630",
       "max": 2
     },
     {
@@ -106,7 +85,7 @@
       "title": "Sweatshirt shorts",
       "price": 300,
       "cat_prefix": "women",
-      "img": "https://eg.hm.com/assets/styles/HNM/12652575/3e316aab8ce1b596545d144d0efd362975b3856f/2/image-thumb__1998684__product_listing/48756e509aa05341e4a618ba4c1b0a5ce24ebcae.jpg",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:f3449143-6bf5-4754-a586-9ac676ed4b24/as/EID-f795663512f66483ca91769ea0b6aebd69076412.jpg?preferwebp=true&height=630",
       "max": 3
     },
     {
@@ -114,31 +93,323 @@
       "title": "Velour top",
       "price": 300,
       "cat_prefix": "kids",
-      "img": "https://eg.hm.com/assets/styles/HNM/14478215/543d925539f4a3b92a79df2dfe46d5d481e1c7ae/2/image-thumb__3463278__product_listing/c1417d02c7a93e6d2aca7965003b4f7d490f0ae8.jpg",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:f7d19d27-7e9a-48ee-9934-2df1a187968b/as/EID-cd46cbcdd3ebedb57edc7a47393114a61bf8ddf2.jpg?preferwebp=true&height=630",
       "max": 2
+    },
+    {
+      "id": 7,
+      "title": "Regular Fit football shirt",
+      "price": 449,
+      "cat_prefix": "sport",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:9b27ca26-65ce-49f2-917f-8ada23ef4fbe/as/EID-e86c0bb38e114d2bd5e1cd8860e5ce733d7302e8.jpg?preferwebp=true&height=630",
+      "max": 2
+    },
+    {
+      "id": 8,
+      "title": "Yoga Leggings",
+      "price": 270,
+      "cat_prefix": "sport",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:f22593f6-8588-418a-a576-ed712c0ca0a1/as/EID-48379c0cda66f97ab8cbc2f1e5bfb6abe3ca5431.jpg?width=450&height=675&preferwebp=true",
+      "max": 4
     },
     {
       "id": 9,
       "title": "Pile all-in-one suit with ears",
       "price": 500,
       "cat_prefix": "baby",
-      "img": "https://eg.hm.com/assets/styles/HNM/10803913/c334b471ad8f564ed1b5dd410c95d94544ee0904/2/image-thumb__1594613__product_listing/5941e37dccc9b0172ac2ab7c266c1cd794cb547f.jpg",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:58f5ceae-85bc-4192-b220-468623b45c6e/as/EID-03e63352943e639cecec746c869554f0a7d14071.jpg?preferwebp=true&height=630",
       "max": 2
     },
     {
-      "id": 17,
-      "title": "Regular Fit football shirt",
-      "price": 449,
-      "cat_prefix": "sport",
-      "img": "https://eg.hm.com/assets/styles/HNM/14472541/cb9d35f1480ce5c8b0be39ad7fd35ab9f8004ce0/2/image-thumb__3453052__product_listing/70408034bd9792a93abbc8ad322565337f535e24.jpg",
+      "id": 10,
+      "title": "Denim Jacket",
+      "price": 700,
+      "cat_prefix": "men",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:9dafd703-8329-4291-aaca-5e4a9489afc0/original/as/EID-1b01e06b2d0b2fd858e9dc1c25fe0df3524465c4.jpg?preferwebp=true",
+      "max": 3
+    },
+    {
+      "id": 11,
+      "title": "Slim Fit Trousers",
+      "price": 350,
+      "cat_prefix": "men",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:80b3e985-7b39-47a6-aaa3-090cc4273e73/as/EID-f3a67889c7001d7e70f1678d443dd00ad208777a.jpg?width=450&height=675&preferwebp=true",
+      "max": 4
+    },
+    {
+      "id": 12,
+      "title": "Cotton Shirt",
+      "price": 280,
+      "cat_prefix": "women",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:c6bcde40-3959-4dca-90bf-4a1c9d10f92e/as/EID-c17aaff27edbba2b143928d6fe91760ce991336a.jpg?width=450&height=675&preferwebp=true",
+      "max": 3
+    },
+    {
+      "id": 13,
+      "title": "Puffer Jacket",
+      "price": 900,
+      "cat_prefix": "women",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:9d095068-17e7-4e7e-bc43-3cd370103fa1/as/EID-0d534a900bd11b287bdcd2340d038247f2aaecc7.jpg?width=450&height=675&preferwebp=true",
       "max": 2
+    },
+    {
+      "id": 14,
+      "title": "Hooded Sweatshirt",
+      "price": 400,
+      "cat_prefix": "kids",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:064aa8a4-cf24-4f47-85c2-f587daf2e61e/as/EID-ac3056088ff6f1da8ed682ff761a7e01ba63402b.jpg?width=450&height=675&preferwebp=true",
+      "max": 3
+    },
+    {
+      "id": 15,
+      "title": "Printed T-shirt",
+      "price": 150,
+      "cat_prefix": "kids",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:ee334d2d-79ca-4324-9101-d40654949d9f/as/EID-9a76703efa1ba27a2f1b6c651bac17cf2bbe7b4c.jpg?width=450&height=675&preferwebp=true",
+      "max": 4
+    },
+    {
+      "id": 16,
+      "title": "Slim Fit Blazer",
+      "price": 1200,
+      "cat_prefix": "men",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:f289fd67-bced-4d3e-8484-025e7529a2e1/original/as/EID-b4639addcb230cefee339834b18f34ec13e95da9.jpg?preferwebp=true",
+      "max": 5
+    },
+    {
+      "id": 17,
+      "title": "High-Waisted Jeans",
+      "price": 800,
+      "cat_prefix": "women",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:4a493ed3-84ff-4389-995d-ddf7c1c26012/as/EID-8b3d3fb0b2b793ca7470bad631b392ccbb0903d7.jpg?width=420&height=630&preferwebp=true",
+      "max": 4
+    },
+    {
+      "id": 18,
+      "title": "Puffer Vest",
+      "price": 950,
+      "cat_prefix": "kids",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:50623431-99c7-4134-b50a-ac2635f5f0c9/as/EID-0c77c723c54c9b3b99ca292ff2bd830199a4c1f3.jpg?width=420&height=630&preferwebp=true",
+      "max": 3
+    },
+    {
+      "id": 19,
+      "title": "Running Shoes",
+      "price": 1500,
+      "cat_prefix": "sport",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:e6436ae6-f716-4b9f-af17-f68ef18fcfd1/as/EID-d4c174a6e43a6fe93124f808f0da19812552dbc2.jpg?width=450&height=675&preferwebp=true",
+      "max": 2
+    },
+    {
+      "id": 20,
+      "title": "Baby Bodysuit",
+      "price": 350,
+      "cat_prefix": "baby",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:6e647b11-e12b-4fe5-bd64-dbc8773cdcbe/as/EID-0f0a2c6daede6522602b9a83986048debd734eff.jpg?width=450&height=675&preferwebp=true",
+      "max": 4
+    },
+    {
+      "id": 21,
+      "title": "Leather Jacket",
+      "price": 2000,
+      "cat_prefix": "women",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:ee7a9a01-2868-44a0-acbf-6e32386d2d03/as/EID-19997dfcf4f388d3acddafee4dde70687ba29f1e.jpg?width=450&height=675&preferwebp=true",
+      "max": 4
+    },
+    {
+      "id": 22,
+      "title": "Pleated Midi Skirt",
+      "price": 750,
+      "cat_prefix": "women",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:d5fbabc8-b896-4a2a-b2c0-06596cc471d8/as/EID-1c581bf8af516165486c88d8c64aa5120b97fe50.jpg?width=450&height=675&preferwebp=true",
+      "max": 3
     }
   ],
   "wishlist": [
     {
       "userId": 1,
-      "productId": 1,
+      "productId": 11,
       "id": 1
+    },
+    {
+      "userId": 1,
+      "productId": 16,
+      "id": 2
+    },
+    {
+      "userId": 2,
+      "productId": 1,
+      "id": 3
+    }
+  ],
+  "orders": [
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 10,
+          "title": "Denim Jacket",
+          "price": 700,
+          "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:9dafd703-8329-4291-aaca-5e4a9489afc0/original/as/EID-1b01e06b2d0b2fd858e9dc1c25fe0df3524465c4.jpg?preferwebp=true",
+          "quantity": 3
+        },
+        {
+          "id": 13,
+          "title": "Puffer Jacket",
+          "price": 900,
+          "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:9d095068-17e7-4e7e-bc43-3cd370103fa1/as/EID-0d534a900bd11b287bdcd2340d038247f2aaecc7.jpg?width=450&height=675&preferwebp=true",
+          "quantity": 1
+        },
+        {
+          "id": 14,
+          "title": "Hooded Sweatshirt",
+          "price": 400,
+          "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:064aa8a4-cf24-4f47-85c2-f587daf2e61e/as/EID-ac3056088ff6f1da8ed682ff761a7e01ba63402b.jpg?width=450&height=675&preferwebp=true",
+          "quantity": 3
+        }
+      ],
+      "subtotal": 4200,
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 1,
+          "title": "Jersey top",
+          "price": 249,
+          "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:0c41e24e-3c8c-41b9-858a-e69428fcbf1b/as/EID-49aa0cb31e13cc5989d9f8cebf5a620bcc43738c.jpg?width=450&height=675&preferwebp=true",
+          "quantity": 4
+        }
+      ],
+      "subtotal": 996,
+      "id": 2
+    },
+    {
+      "userId": 2,
+      "items": [
+        {
+          "id": 1,
+          "title": "Jersey top",
+          "price": 249,
+          "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:0c41e24e-3c8c-41b9-858a-e69428fcbf1b/as/EID-49aa0cb31e13cc5989d9f8cebf5a620bcc43738c.jpg?width=450&height=675&preferwebp=true",
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "title": "Regular Fit Jersey top",
+          "price": 229,
+          "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:1256399d-f338-4e41-baeb-4ec73ec2191c/as/EID-337f976ac6f6426c0b5ba1bffcdedc1ebbd6411b.jpg?preferwebp=true&height=630",
+          "quantity": 1
+        },
+        {
+          "id": 3,
+          "title": "Cotton polo shirt",
+          "price": 200,
+          "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:e3de1c42-daeb-45fb-9970-7d2d2447c4af/as/EID-29aa100fe02e1a64ca80c25e51bbad8d0929cab7.jpg?preferwebp=true&height=630",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 678,
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "items": [
+        {
+          "id": 1,
+          "title": "Jersey top",
+          "price": 249,
+          "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:0c41e24e-3c8c-41b9-858a-e69428fcbf1b/as/EID-49aa0cb31e13cc5989d9f8cebf5a620bcc43738c.jpg?width=450&height=675&preferwebp=true",
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "title": "Regular Fit Jersey top",
+          "price": 229,
+          "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:1256399d-f338-4e41-baeb-4ec73ec2191c/as/EID-337f976ac6f6426c0b5ba1bffcdedc1ebbd6411b.jpg?preferwebp=true&height=630",
+          "quantity": 1
+        },
+        {
+          "id": 3,
+          "title": "Cotton polo shirt",
+          "price": 200,
+          "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:e3de1c42-daeb-45fb-9970-7d2d2447c4af/as/EID-29aa100fe02e1a64ca80c25e51bbad8d0929cab7.jpg?preferwebp=true&height=630",
+          "quantity": 1
+        },
+        {
+          "id": 4,
+          "title": "Cotton t-shirt",
+          "price": 100,
+          "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:c486ae20-0a43-4191-9ec6-8fbf58e0a1b9/as/EID-e15ebf3edc32b9f3442b57bff861293459480153.jpg?preferwebp=true&height=630",
+          "quantity": 1
+        },
+        {
+          "id": 5,
+          "title": "Sweatshirt shorts",
+          "price": 300,
+          "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:f3449143-6bf5-4754-a586-9ac676ed4b24/as/EID-f795663512f66483ca91769ea0b6aebd69076412.jpg?preferwebp=true&height=630",
+          "quantity": 1
+        },
+        {
+          "id": 6,
+          "title": "Velour top",
+          "price": 300,
+          "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:f7d19d27-7e9a-48ee-9934-2df1a187968b/as/EID-cd46cbcdd3ebedb57edc7a47393114a61bf8ddf2.jpg?preferwebp=true&height=630",
+          "quantity": 1
+        },
+        {
+          "id": 7,
+          "title": "Regular Fit football shirt",
+          "price": 449,
+          "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:9b27ca26-65ce-49f2-917f-8ada23ef4fbe/as/EID-e86c0bb38e114d2bd5e1cd8860e5ce733d7302e8.jpg?preferwebp=true&height=630",
+          "quantity": 1
+        },
+        {
+          "id": 8,
+          "title": "Yoga Leggings",
+          "price": 270,
+          "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:f22593f6-8588-418a-a576-ed712c0ca0a1/as/EID-48379c0cda66f97ab8cbc2f1e5bfb6abe3ca5431.jpg?width=450&height=675&preferwebp=true",
+          "quantity": 4
+        },
+        {
+          "id": 9,
+          "title": "Pile all-in-one suit with ears",
+          "price": 500,
+          "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:58f5ceae-85bc-4192-b220-468623b45c6e/as/EID-03e63352943e639cecec746c869554f0a7d14071.jpg?preferwebp=true&height=630",
+          "quantity": 1
+        },
+        {
+          "id": 10,
+          "title": "Denim Jacket",
+          "price": 700,
+          "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:9dafd703-8329-4291-aaca-5e4a9489afc0/original/as/EID-1b01e06b2d0b2fd858e9dc1c25fe0df3524465c4.jpg?preferwebp=true",
+          "quantity": 1
+        },
+        {
+          "id": 17,
+          "title": "High-Waisted Jeans",
+          "price": 800,
+          "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:4a493ed3-84ff-4389-995d-ddf7c1c26012/as/EID-8b3d3fb0b2b793ca7470bad631b392ccbb0903d7.jpg?width=420&height=630&preferwebp=true",
+          "quantity": 1
+        },
+        {
+          "id": 20,
+          "title": "Baby Bodysuit",
+          "price": 350,
+          "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:6e647b11-e12b-4fe5-bd64-dbc8773cdcbe/as/EID-0f0a2c6daede6522602b9a83986048debd734eff.jpg?width=450&height=675&preferwebp=true",
+          "quantity": 1
+        },
+        {
+          "id": 22,
+          "title": "Pleated Midi Skirt",
+          "price": 750,
+          "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:d5fbabc8-b896-4a2a-b2c0-06596cc471d8/as/EID-1c581bf8af516165486c88d8c64aa5120b97fe50.jpg?width=450&height=675&preferwebp=true",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 6007,
+      "id": 4
     }
   ]
 }
