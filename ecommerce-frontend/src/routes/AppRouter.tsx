@@ -24,6 +24,7 @@ const Orders = lazy(() => import("@pages/Orders"));
 import Error from "@pages/Error";
 // protected route
 import ProtectedRoute from "@components/auth/ProtectedRoute";
+
 import useNetworkStatus from "@hooks/useNetworkStatus";
 
 const router = createBrowserRouter([

@@ -2,6 +2,7 @@ import useAllProducts from "@hooks/useAllroducts";
 import { Product } from "@components/eCommerce";
 import { Loading } from "@components/feedback";
 import { TProduct } from "@types";
+import { useTranslation } from "react-i18next";
 import { GridList, Heading } from "@components/common";
 import Paginator from "@components/common/Paginator/Paginator";
 import Selector from "@components/common/Selector/Selector";
@@ -22,9 +23,10 @@ const AllProducts = () => {
     dispatch,
     handleChangeCheck,
   } = useAllProducts();
+  const { t } = useTranslation("global");
   return (
     <>
-      <Heading title="All Products" />
+      <Heading title={t("products.products")} />
       <div className="d-flex justify-content-end align-item-center fit-width mb-3">
         <CheckBox
           prefix={prefix}

@@ -1,4 +1,5 @@
 import { Navigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import useLogin from "@hooks/useLogin";
 import { Heading } from "@components/common";
 import { Input } from "@components/form";
@@ -15,15 +16,16 @@ const Login = () => {
     handleSubmit,
     submitForm,
   } = useLogin();
+  const { t } = useTranslation("global");
 
   if (accessToken) {
-    return <Navigate to="/" />;
+    return <Navigate to="/" replace />;
   }
   return (
     <>
-      <Heading title="User Login" />
+      <Heading title={t("user.login")} />
       <Row>
-        <Col md={{ span: 6, offset: 3 }}>
+        <Col md={6} className="mx-auto">
           {searchParams.get("message") === "login_required" && (
             <Alert variant="success">
               You need to log in to view this content
@@ -36,14 +38,14 @@ const Login = () => {
           )}
           <Form onSubmit={handleSubmit(submitForm)}>
             <Input
-              label="Email"
+              label={t("user.email")}
               name="email"
               register={register}
               error={formErrors.email?.message}
             />
             <Input
               type="password"
-              label="Password"
+              label={t("user.password")}
               name="password"
               register={register}
               error={formErrors.password?.message}
@@ -51,10 +53,11 @@ const Login = () => {
             <Button variant="info" type="submit" style={{ color: "white" }}>
               {loading === "pending" ? (
                 <>
-                  <Spinner animation="border" size="sm"></Spinner> Loading...
+                  <Spinner animation="border" size="sm"></Spinner>{" "}
+                  {t("user.loading")}...
                 </>
               ) : (
-                "Submit"
+                t("user.submit")
               )}
             </Button>
             {error && (

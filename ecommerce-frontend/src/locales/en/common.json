@@ -1,0 +1,59 @@
+{
+  "header": {
+    "our": "Our",
+    "ecommerce": "eCommerce",
+    "wishlist": "Wishlist",
+    "cart": "Cart"
+  },
+  "navbar": {
+    "home": "Home",
+    "categories": "Categories",
+    "all-products": "All Products",
+    "about": "About",
+    "welcome": "Welcome",
+    "navdropdown": {
+      "profile": "Profile",
+      "orders": "Orders"
+    }
+  },
+  "registeration": {
+    "register": "Register",
+    "login": "Login",
+    "logout": "Logout"
+  },
+  "search": {
+    "what-are-you-looking-for": "What are you looking for",
+    "find-a-product": "Find a product",
+    "no-products-found": "No products found"
+  },
+  "user": {
+    "login": "User Login",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Submit",
+    "loading": "Loading",
+    "registration": "User Registration",
+    "first-name": "First Name",
+    "last-name": "Last Name",
+    "confirm-password": "Confirm Password",
+    "email-required": "Email address is required",
+    "password-required": "Password is required",
+    "first-name-required": "First name is required",
+    "last-name-required": "Last name is required",
+    "password-at-least-6": "Password must be at least 6 characters long",
+    "password-special-character": "Password should contain at least 1 special character",
+    "confirm-password-required": "Confirm Password is required",
+    "password-match": "Password and Confirm Password does not match",
+    "email-in-use": "This email is already in use.",
+    "server-error": "Error from the server.",
+    "checking-email": "We're currently checking the availability of this email address. Please wait a moment.",
+    "email-available": "This email is available for use."
+  },
+  "products": {
+    "products": "Products",
+    "add-to-cart": "Add to cart"
+  },
+  "categories": {
+    "categories": "Categories"
+  }
+}

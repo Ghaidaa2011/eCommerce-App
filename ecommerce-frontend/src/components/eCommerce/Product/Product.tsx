@@ -7,9 +7,11 @@ import Like from "@assets/svg/like.svg?react";
 import LikeFill from "@assets/svg/like-fill.svg?react";
 import { Button, Spinner, Modal } from "react-bootstrap";
 import { TProduct } from "@types";
+import { useTranslation } from "react-i18next";
 
 import styles from "./styles.module.css";
 import ProductInfo from "../ProductInfo/ProductInfo";
+
 // import { toast } from "sonner";
 const { maximumNotice, wishlistBtn } = styles;
 
@@ -34,6 +36,8 @@ const Product = memo(
     const currentRemainingQuantity = max - (quantity ?? 0);
 
     const quantityReachedToMax = currentRemainingQuantity <= 0 ? true : false;
+
+    const { t } = useTranslation("global");
 
     useEffect(() => {
       if (!isBtnDisabled) {
@@ -136,13 +140,14 @@ const Product = memo(
             style={{ color: "white", width: "100%" }}
             onClick={addToCartHandler}
             disabled={isBtnDisabled || quantityReachedToMax}
+            className="noWrap"
           >
             {isBtnDisabled ? (
               <>
                 <Spinner animation="border" size="sm" /> Loading...
               </>
             ) : (
-              "Add to cart"
+              t("products.add-to-cart")
             )}
           </Button>
         </ProductInfo>

@@ -17,11 +17,13 @@ import wishlist from "./wishlist/wishlistSlice";
 import auth from "./auth/authSlice"
 import orders from "./orders/ordersSlice";
 import toasts from "./toasts/toastsSlice";
+import translate from "./translate/translateSlice"
+import theme from "./theme/themeSlice"
 
 const rootPersistConfig = {
   key: "root",
   storage,
-  whitelist: ["cart", "auth", "products"],
+  whitelist: ["cart", "auth", "products", "translate", "theme"],
 };
 const cartPersistConfig = {
   key: "cart",
@@ -33,6 +35,7 @@ const authPersistConfig = {
   storage,
   whitelist: ["user", "accessToken"],
 };
+
 const rootReducer = combineReducers({
   auth: persistReducer(authPersistConfig, auth),
   categories,
@@ -40,7 +43,8 @@ const rootReducer = combineReducers({
   cart: persistReducer(cartPersistConfig, cart),
   wishlist: wishlist,
   orders,
-  toasts
+  toasts,
+  translate, theme,
 });
 const persistedReducer = persistReducer(rootPersistConfig, rootReducer)
 

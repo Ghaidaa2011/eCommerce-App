@@ -1,0 +1,59 @@
+{
+  "header": {
+    "our": "متجرنا",
+    "ecommerce": "الالكتروني",
+    "wishlist": "المفضلة",
+    "cart": "عربة التسوق"
+  },
+  "navbar": {
+    "home": "الصفحة الرئيسية",
+    "categories": "الفئات",
+    "all-products": "كل المنتجات",
+    "about": "حول",
+    "welcome": "مرحبا",
+    "navdropdown": {
+      "profile": "حسابي",
+      "orders": "طلباتي"
+    }
+  },
+  "registeration": {
+    "register": "انشاء حساب",
+    "login": "تسجيل ىالدخول",
+    "logout": "تسجيل الخروج"
+  },
+  "search": {
+    "what-are-you-looking-for": "عن ماذا تبحث",
+    "find-a-product": " ابحث عن منتج",
+    "no-products-found": "لم يتم العثور علي منتجات"
+  },
+  "user": {
+    "login": "تسجيل دخول المستخدم",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "submit": "إرسال",
+    "loading": "تحميل",
+    "registration": "تسجيل المستخدم",
+    "first-name": "الاسم الأول",
+    "last-name": "اسم العائلة",
+    "confirm-password": "تأكيد كلمة المرور",
+    "email-required": "البريد الإلكتروني مطلوب",
+    "password-required": "كلمة المرور مطلوبة",
+    "first-name-required": "الاسم الأول مطلوب",
+    "last-name-required": "اسم العائلة مطلوب",
+    "password-at-least-6": "يجب أن تكون كلمة المرور مكونة من 6 أحرف على الأقل",
+    "password-special-character": "يجب أن تحتوي كلمة المرور على حرف خاص واحد على الأقل",
+    "confirm-password-required": "تأكيد كلمة المرور مطلوب",
+    "password-match": "كلمة المرور وتأكيد كلمة المرور غير متطابقين",
+    "email-in-use": "هذا البريد الإلكتروني مستخدم بالفعل.",
+    "server-error": "خطأ من الخادم.",
+    "checking-email": "نحن نقوم حاليًا بالتحقق من توفر عنوان البريد الإلكتروني هذا. الرجاء الانتظار لحظة.",
+    "email-available": "هذا البريد الإلكتروني متاح للاستخدام."
+  },
+  "products": {
+    "products": "المنتجات",
+    "add-to-cart": "أضف إلى السلة"
+  },
+  "categories": {
+    "categories": "الفئات"
+  }
+}

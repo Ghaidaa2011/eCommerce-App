@@ -24,12 +24,11 @@ const ProductInfo = ({
       <div className={`${styles[`productImg-${direction}`]}`}>
         <img src={img} alt={title} />
       </div>
-      <div className={`${styles[`productInfo-${direction}`]}`}>
+      <div className={`${styles[`productInfo-${direction}`]} text-center`}>
         <h2 title={title}>{title}</h2>
         <h3>{price.toFixed(2)} EGP</h3>
         {quantity && <h3>Total Quantity: {quantity}</h3>}
         {quantity && <h3>Price Total: {(quantity * price).toFixed(2)}</h3>}
-
         {children}
       </div>
     </div>

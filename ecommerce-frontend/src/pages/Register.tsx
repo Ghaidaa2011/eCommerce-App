@@ -1,4 +1,5 @@
 import { Navigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import useRegister from "@hooks/useRegister";
 import { Heading } from "@components/common";
 import { Input } from "@components/form";
@@ -16,30 +17,30 @@ const Register = () => {
     handleSubmit,
     emailOnBlurHandler,
   } = useRegister();
-
+  const { t } = useTranslation("global");
   if (accessToken) {
     return <Navigate to="/" />;
   }
   return (
     <>
-      <Heading title="User Registration" />
+      <Heading title={t("user.registration")} />
       <Row>
-        <Col md={{ span: 6, offset: 3 }}>
+        <Col md={6} className="mx-auto">
           <Form onSubmit={handleSubmit(submitForm)}>
             <Input
-              label="First Name"
+              label={t("user.first-name")}
               name="firstName"
               register={register}
               error={formErrors.firstName?.message}
             />
             <Input
-              label="Last Name"
+              label={t("user.last-name")}
               name="lastName"
               register={register}
               error={formErrors.lastName?.message}
             />
             <Input
-              label="Email"
+              label={t("user.email")}
               name="email"
               register={register}
               onBlur={emailOnBlurHandler}
@@ -47,33 +48,33 @@ const Register = () => {
                 formErrors.email?.message
                   ? formErrors.email?.message
                   : emailAvailabilityStatus === "notAvailable"
-                  ? "This email is already in use."
+                  ? t("user.email-in-use")
                   : emailAvailabilityStatus === "failed"
-                  ? "Error from the server."
+                  ? t("user.server-error")
                   : ""
               }
               formText={
                 emailAvailabilityStatus === "checking"
-                  ? "We're currently checking the availability of this email address. Please wait a moment."
+                  ? t("user.checking-email")
                   : ""
               }
               success={
                 emailAvailabilityStatus === "available"
-                  ? "This email is available for use."
+                  ? t("user.email-available")
                   : ""
               }
               disabled={emailAvailabilityStatus === "checking" ? true : false}
             />
             <Input
               type="password"
-              label="Password"
+              label={t("user.password")}
               name="password"
               register={register}
               error={formErrors.password?.message}
             />
             <Input
               type="password"
-              label="Confirm Password"
+              label={t("user.confirm-password")}
               name="confirmPassword"
               register={register}
               error={formErrors.confirmPassword?.message}
@@ -91,10 +92,11 @@ const Register = () => {
             >
               {loading === "pending" ? (
                 <>
-                  <Spinner animation="border" size="sm"></Spinner> Loading...
+                  <Spinner animation="border" size="sm"></Spinner>{" "}
+                  {t("user.loading")}...
                 </>
               ) : (
-                "Submit"
+                t("user.submit")
               )}
             </Button>
             {error && (
